@@ -1,0 +1,7 @@
+export GOPROXY=https://goproxy.cn,direct
+
+vscode :ctrl+shift+p  go install tools
+
+go env -w CGO_ENABLED=1
+sudo apt-get install build-essential
+
