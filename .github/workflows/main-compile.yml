@@ -57,10 +57,10 @@ jobs:
           name: archive
           path: archive.tar.gz
         
-      - name: Create Release
-        uses: ncipollo/release-action@v1
-        with:
-          tag_name: "v${{ github.ref_name }}"
-          release_name: "Version ${{ github.ref_name }}"
-          body: "This is the release for ${{ github.ref_name }}"
-          artifacts: "archive.tar.gz"
+      # - name: Create Release
+      #   uses: ncipollo/release-action@v1
+      #   with:
+      #     tag_name: "v${{ github.ref_name }}"
+      #     release_name: "Version ${{ github.ref_name }}"
+      #     body: "This is the release for ${{ github.ref_name }}"
+      #     artifacts: "archive.tar.gz"
