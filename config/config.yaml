@@ -1,0 +1,4 @@
+TLS:
+  key: "/config/.config/code-server/private.key"
+  ca: "/config/.config/code-server/certificate.crt"
+  enable: true

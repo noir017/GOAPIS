@@ -74,18 +74,18 @@ func fetchNewsEveryDay(url string) []Hotword {
 // 获取每日新闻
 func SaveNewsEveryDay() {
 	urls := []string{
-		"https://api.vvhan.com/api/hotlist/wbHot",
-		"https://api.vvhan.com/api/hotlist/toutiao",
-		"https://api.vvhan.com/api/hotlist/huPu",
-		"https://api.vvhan.com/api/hotlist/zhihuHot",
-		"https://api.vvhan.com/api/hotlist/bili",
-		"https://api.vvhan.com/api/hotlist/36Ke",
-		"https://api.vvhan.com/api/hotlist/baiduRD",
-		"https://api.vvhan.com/api/hotlist/douyinHot",
+		// "https://api.vvhan.com/api/hotlist/wbHot",
+		// "https://api.vvhan.com/api/hotlist/toutiao",
+		// "https://api.vvhan.com/api/hotlist/huPu",
+		// "https://api.vvhan.com/api/hotlist/zhihuHot",
+		// "https://api.vvhan.com/api/hotlist/bili",
+		// "https://api.vvhan.com/api/hotlist/36Ke",
+		// "https://api.vvhan.com/api/hotlist/baiduRD",
+		// "https://api.vvhan.com/api/hotlist/douyinHot",
 		"https://api.vvhan.com/api/hotlist/douban",
 		"https://api.vvhan.com/api/hotlist/itNews",
-		"https://api.vvhan.com/api/hotlist/huXiu",
-		"https://api.vvhan.com/api/hotlist/woShiPm",
+		// "https://api.vvhan.com/api/hotlist/huXiu",
+		// "https://api.vvhan.com/api/hotlist/woShiPm",
 	}
 	data := []Hotword{}
 	for _, url := range urls {

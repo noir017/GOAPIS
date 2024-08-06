@@ -1,0 +1,27 @@
+name: Go Compile
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.22.5
+
+      - name: Set CGO_ENABLED and install build-essential
+        run: |
+          export CGO_ENABLED=1
+          sudo apt-get update
+          sudo apt-get install -y build-essential
+          
+      - name: Compile Go program
+        run: go build main.go
