@@ -41,21 +41,21 @@ jobs:
       - name: Compile Go program
         run: go build main.go
 
-      - name: Upload file
-        uses: actions/upload-artifact@v2
-        with:
-          name: main
-          path: ./main  # 替换为实际的编译后文件的路径
+      # - name: Upload file
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: main
+      #     path: ./main  # 替换为实际的编译后文件的路径
       
-      - name: Create archive
-        run: |
-          tar --exclude='*.go' -zcvf archive.tar.gz ./main ./config
+      # - name: Create archive
+      #   run: |
+      #     tar --exclude='*.go' -zcvf archive.tar.gz ./main ./config
 
-      - name: Upload archive
-        uses: actions/upload-artifact@v2
-        with:
-          name: archive
-          path: archive.tar.gz
+      # - name: Upload archive
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: archive
+      #     path: archive.tar.gz
         
       # - name: Create Release
       #   uses: ncipollo/release-action@v1
