@@ -1,8 +1,0 @@
-export GOPROXY=https://goproxy.cn,direct
-
-vscode :ctrl+shift+p  go install tools
-
-go env -w CGO_ENABLED=1
-sudo apt-get install build-essential
-
-SSL: acme.sh --issue -d nohara.eu.org -w /etx/nginx/nohara.eu.org
