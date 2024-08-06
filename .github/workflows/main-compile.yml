@@ -3,7 +3,7 @@ name: Go Compile
 on:
   push:
     branches:
-      - master
+      - autobuild
 
 jobs:
   build:
