@@ -1,4 +1,0 @@
-TLS:
-  key: "/config/.config/code-server/code-serve.pem"
-  ca: "/config/.config/code-server/code-serve-key.pem"
-  enable: true
