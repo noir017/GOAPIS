@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/noir017/goapis/app/apis/v1/bing"
 	"github.com/noir017/goapis/app/apis/v1/extapi"
 	"github.com/noir017/goapis/app/global"
 )
@@ -35,7 +36,7 @@ func StartService() {
 
 	// 注册api路由
 	extapi.RegisterApis(global.Gin)
-
+	bing.RegisterApis(global.Gin)
 	// 定义一个默认的路由处理函数
 	global.Gin.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
